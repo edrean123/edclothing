@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - EDCLOTHING</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="image\EDCLOTHING-removebg-preview.png"width="200px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class='bx bx-home'></i>Home</a></li>
+                        <li><a href="product.html"><i class='bx bx-briefcase-alt-2'></i>Products</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+    </div>
+
+    <section id="checkout">
+        <div class="container">
+            <h2>Checkout</h2>
+            <div class="cart-summary">
+                <ul id="cart-items-summary"></ul>
+            </div>
+            <div class="checkout-form">
+                <!-- Add your checkout form fields here -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <button onclick="completePurchase()">Complete Purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EDClothing. All rights reserved.</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+    <script defer src="checkout.js"></script> <!-- Add a new JavaScript file for checkout logic -->
+</body>
+</html>
